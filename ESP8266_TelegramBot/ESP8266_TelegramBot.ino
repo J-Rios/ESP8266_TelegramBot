@@ -95,13 +95,13 @@ void loop()
     // El tiempo para consultar si hay mensajes nuevos ha transcurrido
     if (millis() > Bot_lasttime + Bot_mtbs)
     {
-        int numNewMessages = bot.getUpdates(bot.last_message_recived + 1);
+        int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
         while(numNewMessages)
         {
             // Mientras haya nuevos mensajes, se tratan en el manejador
             Serial.println("got response");
             handleNewMessages(numNewMessages);
-            numNewMessages = bot.getUpdates(bot.last_message_recived + 1);
+            numNewMessages = bot.getUpdates(bot.last_message_received + 1);
         }
         Bot_lasttime = millis();
     }
