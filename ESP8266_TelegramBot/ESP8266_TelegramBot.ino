@@ -2,9 +2,9 @@
 // El programa representa a un Bot que lee todos los mensajes publicados y se da a conocer cuando en alguno 
 // de los mensajes aparecen las palabras clave: "arduino", "telegram" y "bot".
 //
-// Se precisan las siguientes librerías:
-// UniversalTelegramBot: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
-// ArduinoJson: Buscarla con Arduino IDE en Programa/Incluir libreria/Gestionar librerias
+// Se precisan las siguientes librerías (buscarlas con Arduino IDE en Programa/Incluir libreria/Gestionar librerias):
+// UniversalTelegramBot
+// ArduinoJson
 /***********************************************************************************************************/
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
